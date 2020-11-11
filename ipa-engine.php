@@ -47,7 +47,7 @@ function members_ajax_search() {
 	$page_num = isset($_REQUEST['page']) ? intval($_REQUEST['page']) : 1;
 
 	// get zip codes in radius
-	$api_key = "2pU9JQu5lOgbsv1cX2C6h9l5amfnUi7fFc6aeGFlXRToiGNF7x0NJuMMeSQ47E0j";
+	$api_key = "###";
 	$unit = "mile";
 	$api_url = sprintf("https://www.zipcodeapi.com/rest/%s/radius.json/%d/%d/%s", $api_key, $zip, $radius, $unit);
 	$request = wp_remote_get($api_url);
